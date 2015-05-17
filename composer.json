@@ -5,6 +5,7 @@
     "keywords": ["yii2", "wordpress"],
     "type": "yii2-extension",
     "license": "Commercial",
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*",
         "johnpbloch/wordpress": "4.2"
