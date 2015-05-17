@@ -4,6 +4,7 @@ namespace amarshimi\wordpress\loader\components;
 
 use Yii;
 use yii\web\HttpException;
+use yii\web\NotFoundHttpException;
 
 class ExceptionHandler
 {
@@ -21,22 +22,29 @@ class ExceptionHandler
  
 //        $event=new Exception($this,$exception);
 
-        if($exception instanceof HttpException && $exception->statusCode == 404 && !isset($_GET['r']/*its not a bad tii request*/))
+        if($exception instanceof NotFoundHttpException && !isset($_GET['r']/*its not a bad tii request*/))
         {
-            try
-            {
-                Yii::$app->runAction("wp/index");
-            }
-            catch(\Exception $exception) {
-                
-                var_dump($exception);
-                die;
-                
-            }
+
+            echo  Yii::$app->runAction("wordpress-loader");
+
+//            try
+//            {
+//
+////                $results =  Yii::$app->runAction("wordpress-loader");
+////                Yii::$app->end();
+//            }
+//            catch(\Exception $exception) {
+//
+//                var_dump($exception);
+//                die;
+//
+//            }
+
             // if we throw an exception in Wordpress on a 404, we can use
             // our main error handler to handle the error
         }
- 
+
+
 //        if(!$event->handled)
 //        {
 //            Yii::$app->handleException($exception);

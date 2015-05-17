@@ -27,5 +27,11 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
         $router = new ExceptionHandler();
 
+        if ($app instanceof \yii\web\Application) {
+            $app->getUrlManager()->addRules([
+                $this->id => $this->id . '/default/index',
+            ], false);
+        }
+
     }
 }
