@@ -1,5 +1,6 @@
 {
     "name": "ravtech/yii2-wordpress-loader",
+    "version": "1.0",
     "description": "Use wordpress with yii2",
     "keywords": ["yii2", "wordpress"],
     "type": "yii2-extension",
