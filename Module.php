@@ -1,8 +1,8 @@
 <?php
 
-namespace ravtech\wordpress\loader;
+namespace amarshimi\wordpress\loader;
 
-use ravtech\wordpress\loader\components\ExceptionHandler;
+use amarshimi\wordpress\loader\components\ExceptionHandler;
 use yii\base\BootstrapInterface;
 
 class Module extends \yii\base\Module implements BootstrapInterface

@@ -1,6 +1,6 @@
 <?
 
-namespace ravtech\wordpress\loader\controllers;
+namespace amarshimi\wordpress\loader\controllers;
 
 use Yii;
 use yii\web\Controller;

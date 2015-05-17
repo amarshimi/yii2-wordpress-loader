@@ -1,6 +1,6 @@
 <?php
 
-namespace ravtech\wordpress\loader\components;
+namespace amarshimi\wordpress\loader\components;
 
 use Yii;
 use yii\web\HttpException;
