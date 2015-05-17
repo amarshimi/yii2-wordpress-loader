@@ -1,0 +1,22 @@
+{
+    "name": "ravtech/yii2-wordpress-loader",
+    "description": "Use wordpress with yii2",
+    "keywords": ["yii2", "wordpress"],
+    "type": "yii2-extension",
+    "license": "Commercial",
+    "require": {
+        "yiisoft/yii2": "*",
+        "johnpbloch/wordpress": "4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ravtech\\wordpress\\loader\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
+        "wordpress-install-dir": "wordpress"
+    }
+}
