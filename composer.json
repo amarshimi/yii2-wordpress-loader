@@ -15,9 +15,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.0"
-        },
         "wordpress-install-dir": "wordpress"
     }
 }
