@@ -5,7 +5,6 @@
     "keywords": ["yii2", "wordpress"],
     "type": "yii2-extension",
     "license": "Commercial",
-    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*",
         "johnpbloch/wordpress": "4.2"
@@ -17,7 +16,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "2.0"
         },
         "wordpress-install-dir": "wordpress"
     }
